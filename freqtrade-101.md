@@ -88,7 +88,7 @@ Telegramda gosterilen bilgilerin bazilarinin altinda Refresh butonu bulunur. Her
 
 Alacak duzgun coin bulamamistir. 
 
-### Ayni islemde Bunyamin %30 kar etti, b**enimki %3 kar hatta -%5 zarar etti**
+### Ayni islemde Bunyamin %30 kar etti, benimki %3 kar hatta -%5 zarar etti
 
 Bot 2-5 saniyelik araliklarla alim satim yapip yapamadigini kontrol eder. 1sn fark ile diger kisi islemi %1 daha ucuza ya da daha pahaliya almis olabilir. Ikiniz farkli noktalardan isleme giris yaptiginiz icin botun algoritmasina gore sattigi noktalar da degisebilir. Bot %5 kar etmeyi bekleyip bir kiside bu kari yakalayip satmis olabilir, oteki kisideki islemin kari %5 e gelmeden geri dusmeye baslamis olabilir, bot da yukselmesi icin bekliyor olabilir, islem yukselmek yerine zarara dogru yonelebilir. Milisaniyelik farklar ya da cok ufak fiyat farklari farkli senaryolar olusturur.
 
@@ -101,15 +101,20 @@ Bot 2-5 saniyelik araliklarla alim satim yapip yapamadigini kontrol eder. 1sn fa
 
 ### Komisyonlar BNB ile odenir mi?
 
-Evet, Binance de islem ucretlerinin BNB ile odenmesi aciksa ve hesapta BNB varsa kullanilir
+Evet, Binance de islem ucretlerinin BNB ile odenmesi aciksa ve hesapta BNB varsa kullanilir.
+Profit hesaplanirken ve sonuclar verilirken odenen komisyon da hesabin icindedir.
 
 ### Yapay zeka, AI, Machine Learning?
 
-Freqtrade de bunlar yok.
+Freqtrade de bunlar otomatik olarak yok. ML kullanan baska botlar var ama FreqTrade kadar kar getirdigi gozlenmedi.
 
 ### Kaldirac, future, long/short?
 
 Freqtrade de bunlar da yok, sadece spot trading var. Leveraged olarak sadece Binance deki UP/DOWN pairler kullanilabilir. O pairler de tavsiye edilmiyor ve denemeleri basarisiz oldu.
+
+### Minumum/maksimum ne kadar tutarla oynanir?
+
+Binance te minimum islem tutari 15 USDT. Teorik olarak trade limit x 15 USDT ile giris yapilabilir. Komisyonlar ve zarar edildiginde 15 USDT nin altina gecilebilecegi de dusunulurse 100 USDT gibi bir tutarin altinda girmek islevsel degildir. Maksimum sinir bulunmuyor fakat tutarlar yukseldiginde limit emirleri daha zor kapanmaya ve market emirleri daha dezavantajli fiyatlara kapanmaya baslayabilir.
 
 # Kaynaklar
 
