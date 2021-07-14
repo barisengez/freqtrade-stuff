@@ -17,7 +17,7 @@ Yazilimsal bot her yazilim gibi hataya aciktir. Asagidaki riskleri barindirir.
 
 **Alim/satim sinyali:** Botun bir coin i almaya/satmaya karar verdigi sinyaldir. Alim islemi candle kapandiktan sonra bir sonraki candle da yapilir. Bot, araliksiz olarak calismaktadir. Alim sinyalleri her bir timeframe de (ornek 5m) bir verilir, yani candle kapandiktan sonra alim karari verilebilir. Satimlar her an olabilir.
 
-![Crypto Trading 101: A Beginner&#39;s Guide to Candlesticks - CoinDesk](https://user-images.githubusercontent.com/18678845/125082935-1710f380-e0c8-11eb-9cac-23da7a81e764.png)
+![Crypto Trading 101: A Beginner's Guide to Candlesticks - CoinDesk](https://user-images.githubusercontent.com/18678845/125082935-1710f380-e0c8-11eb-9cac-23da7a81e764.png)
 
 **Timeframe:** Stratejiler 1m (1 dakika), 5m, 1h (1 saat), 4h gibi timeframelerde calisabilir. Bu timeframe sureleri, botun hangi candle lara bakarak karar verdiginin suresidir. Bot, belli bir timeframe de calisirken farkli candle buyukluklerindeki indikatorlerden de faydalanabilir. Ornegin alim satim degerlendirmesi sirasinda 5m timeframe de calisan bot, 1h lik indikatorlere de bakabilir.
 
@@ -77,8 +77,9 @@ Bot ile ilgili islemlerin cogu Telegram uzerinden yapilmaktadir. Telegramda acil
 
 #### Manuel komutlar
 
-**/forcesell 15** : status table da gorulen acik pozisyonlardan herhangi birini manuel sattirmak icin kullanilir. 15 olarak verilen yere acik pozisyonun tablodaki id si yazilir  
-**/forcebuy** : Manuel alim icin kullanilir. Komut girildiginde whitelist listelenir ve buradan secim yapilarak manuel alim yapilir.
+**/forcesell 15** : status table da gorulen acik pozisyonlardan herhangi birini manuel sattirmak icin kullanilir. 15 olarak verilen yere acik pozisyonun "status table" komutunda gelen tablodaki id si yazilir  
+**/forcebuy** : Manuel alim icin kullanilir. Komut girildiginde whitelist listelenir ve buradan secim yapilarak manuel alim yapilir.  
+**/delete 15** : status table da gorulen acik pozisyonlardan herhangi birini manuel silmek icin kullanilir. 15 olarak verilen yere acik pozisyonun "status table" komutunda gelen tablodaki id si yazilir. Islem silindikten sonra bot, alim hic gerceklememis gibi hayatina devam eder. Silinen pozisyonun islemlerine binance uzerinden manuel devam edilir.
 
 Telegramda gosterilen bilgilerin bazilarinin altinda Refresh butonu bulunur. Her seferinde tekrar bu komutlari vermek yerine Refresh butonu kullanilabilir. Mesaj kalabaligini onler
 
@@ -101,7 +102,7 @@ Bot 2-5 saniyelik araliklarla alim satim yapip yapamadigini kontrol eder. 1sn fa
 
 ### Komisyonlar BNB ile odenir mi?
 
-Evet, Binance de islem ucretlerinin BNB ile odenmesi aciksa ve hesapta BNB varsa kullanilir.
+Evet, Binance de islem ucretlerinin BNB ile odenmesi aciksa ve hesapta BNB varsa kullanilir.  
 Profit hesaplanirken ve sonuclar verilirken odenen komisyon da hesabin icindedir.
 
 ### Yapay zeka, AI, Machine Learning?
